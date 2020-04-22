@@ -33,8 +33,7 @@ app = dash.Dash()
 app.layout = html.Div([
     dl.Map(style={'width': '1000px', 'height': '500px'}, center=center, zoom=10, children=[
         dl.TileLayer(),
-        dl.Circle(center=center.tolist(), radius=10)
-#         dl.GeoJSON(data=Circle([1, 0]))
+        dl.GeoJSON(data=circles)
     ])
 ])
 
